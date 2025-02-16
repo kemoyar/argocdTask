@@ -4,7 +4,7 @@ metadata:
     name: guestbook
     namespace: argocd
 spec:
-    project: default
+    project: default-project
     source:
         repoURL: https://github.com/kemoyar/argocdTask.git
         path: guestbookyamlfiles

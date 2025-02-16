@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: second-project
+  namespace: argocd
+spec:
+  destinations:
+  - namespace: '*'
+    server: https://172.18.0.3:6443  # Second cluster
+  sourceRepos:
+  - '*'  # Allow all repositories
+  clusterResourceWhitelist:
+  - group: '*'
+    kind: '*'
+
