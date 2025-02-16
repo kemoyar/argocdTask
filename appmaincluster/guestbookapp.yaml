@@ -7,7 +7,7 @@ spec:
     project: default
     source:
         repoURL: https://github.com/kemoyar/argocdTask.git
-        path: applications
+        path: guestbookyamlfiles
         targetRevision: master
     destination:
         server: 'https://kubernetes.default.svc'
