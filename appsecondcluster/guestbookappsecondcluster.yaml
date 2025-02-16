@@ -7,10 +7,10 @@ spec:
     project: default
     source:
         repoURL: https://github.com/kemoyar/argocdTask.git
-        path: applications
+        path: guestbookyamlfiles
         targetRevision: master
     destination:
-        server: 'https://172.18.0.2:6443'
+        server: 'https://172.18.0.3:6443'
         namespace: default
     syncPolicy:
       automated:
